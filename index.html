@@ -1,16 +1,18 @@
 <html>
     <head>
-        <title> HTML </title>
+        <title>JS Element</title>
     </head>
     <body>
-
-        <div id="root"></div>
-<!-- 
-        <div>
-            <h1 class="header" >Hello</h1>
-            <p>Welcome to the session</p>
-            <button class="btn" >Click</button>
-        </div> -->
+        <div id="root" >
+            <h1>This is heading tag</h1>
+        </div>
     </body>
-    <script  src="./impletive.js" ></script>
+    <!-- To creating the JS Element. -->
+    <script>
+        const heading = document.createElement("h2");
+        heading.textContent = "This is heading 2";
+        heading.className = "h2-heading";
+        document.getElementById("root").append(heading);
+    </script>
+
 </html>
