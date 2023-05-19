@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React App</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/javascript" src="https://unpkg.com/react/umd/react.production.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+
+    <script type="text/javascript">
+      const App = () => {
+        const imageUrl = "https://files.codingninjas.in/coding-ninjas-24647.png";
+        return (
+          React.createElement("div", null,
+            React.createElement("img", { src: imageUrl, alt: "Coding Ninjas" })
+          )
+        );
+      };
+
+      ReactDOM.render(React.createElement(App, null), document.getElementById("root"));
+    </script>
+  </body>
+</html>
