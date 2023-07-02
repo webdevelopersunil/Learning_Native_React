@@ -2,17 +2,16 @@
     <head>
         <title>JS Element</title>
     </head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>    
     <body>
         <div id="root" >
             <h1>This is heading tag</h1>
         </div>
     </body>
     <!-- To creating the JS Element. -->
-    <script>
-        const heading = document.createElement("h2");
-        heading.textContent = "This is heading 2";
-        heading.className = "h2-heading";
-        document.getElementById("root").append(heading);
-    </script>
+    <script src="./index.js" type="text/babel" ></script>
 
 </html>
