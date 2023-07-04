@@ -3,7 +3,6 @@
         <title>
             Starting with react app
         </title>
-        
         <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
         <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -14,35 +13,25 @@
 
         <script type="text/babel" >
 
-            const headerExpression = <h1>JSX Expression</h1>;
-
-            let arr = [1,2,3,4,5,6,7,8,9,0];
-
-            let cars = ["Audi","BMW","Mercs","Toyota"];
-
-            let obj =   {
-                            "name" : "Sunil",
-                            "phone": "KingsOne"
-                        };
-            
             function App(){
+
+                let cars = ["BMW","AUDI","HONDA","HYNDAI","MARUTI","SUZUKI"];
 
                 return (
                     <>
-                    
-                    { arr.map((num) => <h1>{num}</h1>) }
-                    <h2>{obj.name}</h2>
+                        <h1>List of cars</h1>
+                        <ul>
+                            { cars.map((car) => (
 
+                                <li>{car}</li>
 
-                    <h1>Cars List</h1>
-                    <ul>
-                        {cars.map((car) => <li>{car}</li> )}
-                    </ul>
-                    
+                            ) ) }
+                        </ul>
                     </>
-                    );
+                )
             }
-            
+
+
             ReactDOM.createRoot(document.getElementById("root")).render(<App />);
         </script>
 
